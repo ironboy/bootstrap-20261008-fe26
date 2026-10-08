@@ -1,0 +1,23 @@
+// Overrides of Bootstrap's Sass variables.
+//
+// Just declare the variable. Bootstrap's own defaults are marked `!default`,
+// so anything set here wins. See node_modules/bootstrap/scss/_variables.scss
+// for the full list of names you can override.
+
+// There are around 1500 variables you can override to create your own look!
+// how rounded corners, font, font-sizes, colors, how many cols the grid system uses etc
+
+$primary: #6f42c1;
+$secondary: rgb(68, 144, 78);
+$border-radius: 7px;
+$font-family-sans-serif: Verdana, system-ui, sans-serif;
+
+// don't use smooth scrolling since it interferes with form validation
+$enable-smooth-scroll: false;
+
+// Carousel next/prev arrows: white by default (hard to see on bright images).
+// The arrows are SVG background images, so the color must be set here,
+// before Bootstrap builds the SVG - plain CSS `color` won't affect them.
+$carousel-control-color: $primary;
+$carousel-control-opacity: .8;
+$carousel-control-hover-opacity: 1;
